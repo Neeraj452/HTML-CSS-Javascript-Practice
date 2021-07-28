@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style/Budget_callculator.css" rel="stylesheet">
+    <title>Budget Calculator</title>
+</head>
+<body>
+<div class="main_container">
+    <header>
+        Budget Calculator
+    </header>
+    <h2 style=text-align:center>Main Screen</h2>
+    <div class="main_screen">
+        <table class="table">
+
+          <tbody>
+            <tr>
+                <th scBope="row">Budget</th>
+                <td id="Budget"></td>
+                <th scope="row">Balance</th>
+                <td id="Balance"></td>
+            </tr>
+            <tr>
+                <th scope="row">Expenses</th>
+                <td id="expense1">0</td>
+                <th scope="row">Saving</th>
+                <td id="Saving"></td>
+            </tr>
+            </tbody>
+        </table>
+        <level>New Budget</level><br>
+        <input type="number" id="New_Budget" name="New_Budget" size="45">
+        <button class="btn btn-primary" type="button" onclick="myFunction()" >Submit</button>
+    </div>
+
+
+    <div class="main_screen" id="screen">
+        <h1>Expense</h1>
+            <level>Budget Description</level> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        <level>Categoty</level> <br>
+        <input type="text" id="Budget_Description" name="Budget_Description" size="45">
+
+        <input type="text" id="Categoty" name="Categoty" size="45">
+        <br><br>
+        <level>Amount</level> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <level>Date</level> <br>
+        <input type="text" id="Amount" name="" size="45">
+
+        <input type ="date" id="Date">
+        <br>
+        <br>
+        <button class="btn btn-primary" type="button" onclick="addRow()" style=margin-left:300px>Add Expense </button>
+</div>
+    <center><h2>All Expense</h2></center>
+    <div>
+        <table id="table1" class="table2 table "  >
+            <thead style="background-color: #86b7fe">
+            <tr>
+                <th scope="col">Budget_Description</th>
+                <th scope="col">Categoty</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Date</th>
+               <th> <input type="button" name="button1" value="Delete" class="btn btn-danger" onclick="removeRow('button1')" id="tabs"></button></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+<script src="js/Budget_calculator.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

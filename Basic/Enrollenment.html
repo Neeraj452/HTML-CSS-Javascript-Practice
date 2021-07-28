@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment</title>
+  <link href="style/Enrollment.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Main Container -->
+
+<div class="container" >
+  <header>
+      <center>Student Enrollment Form</center>
+  </header>
+  <!--Left Container -->
+    <div class="form_left">
+
+        <form action="#"  onsubmit=" return validation()" name="stud_form">
+        <table class="table1" cellpadding="20px">
+              <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Name" id="uname"></td>
+                </tr>
+                <tr>
+                <td>Email</td>
+                    <td><input type="email" name="email" id="Email"></td>
+                </tr>
+                <tr>
+              <td>Website</td>
+              <td><input type="url" name="url" id="website"><td>
+                </tr>
+
+            <tr>
+              <td>Image link</td>
+              <td><input type="url" name="Image_link" id="Image"></td>
+            </tr>
+
+          <tr>
+              <td>Gendar</td>
+
+              <td> <input type="radio" name="Gendar" id="male" value="male">
+              Male
+              <input type="radio" name="Gendar" id="female" value="female">
+
+              Female</td>
+          </tr>
+   </table>
+
+      <div class="button">
+      <div class="left_button">
+          <button type="submit" onclick=" return handleClick()" name="button" >Submit </button>
+      </div>
+          <div class="right_button">
+              <button type="reset" name="Reset" >Reset </button>
+
+          </div>
+      </div>
+
+            </form>
+    </div>
+
+    <!--Right Container -->
+
+<div class="form_right">
+        <div class="heading">
+         Enrollment Student
+        </div>
+    <div class="form_right_flex">
+            <div class="left_form_right">
+                <p id="demo"></p>
+                <p id="demo1"></p>
+                <p id="demo2"></p>
+
+                <p id="demo4"></p>
+            </div>
+
+         <div id="image1" class="image2">
+         </div>
+    </div>
+</div>
+
+<!--Center Container -->
+    <div class="partition">
+
+    </div>
+</div>
+<script src="js/Enrollment.js"> </script>
+</body>
+</html>
